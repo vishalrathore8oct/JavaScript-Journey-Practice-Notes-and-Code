@@ -13,10 +13,10 @@ form.addEventListener("submit", (e) => {
     const height = Number(document.querySelector("#height").value)
     // console.log(height);
 
-    if (weight === "" || weight < 0 || isNaN(weight)) {
+    if (weight == "" || weight < 0 || isNaN(weight)) {
         // console.log("enter valid weight");
         result.innerHTML = `Enter the valid weight ${weight}`
-    } else if (height === "" || height < 0 || isNaN(height)) {
+    } else if (height == "" || height < 0 || isNaN(height)) {
         // console.log("enter valid height");
         result.innerHTML = `Enter the valid height ${height}`
     } else {
